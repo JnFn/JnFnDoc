@@ -1,2 +1,3 @@
-* [首页](/Main.md)
-* [指南](/summary.md)
+* [首页](/home.md)
+    * [返回主页](/)   
+* [修改记录](/summary.md)
