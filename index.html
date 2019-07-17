@@ -12,10 +12,36 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: '【docsify】常用项示例',
+      repo: 'https://jnfn.github.io/blog/',
+      subMaxLevel: 4,
+      notFoundPage: true,
+      autoHeader: true,
+      formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
+      homepage: 'home.md',
+      auto2top: true,
+      loadSidebar: true,
+      loadNavbar: true,
+      search: {
+        maxAge: 360000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto',
+        placeholder: {
+          '/':'搜索'
+        },
+        // 支持本地化
+        noData: {
+          '/': '找不到结果'
+        },
+        // 搜索标题的最大程级, 1 - 6
+        depth: 4
+      },
+      coverpage: true
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="resource/js/search.js"></script>
+  <script src="resource/js/zoom-image.js"></script>
+  <script src="resource/js/docsify-copy-code.min.js"></script>
+  <script src="resource/js/prism-java.min.js"></script>
 </body>
 </html>
